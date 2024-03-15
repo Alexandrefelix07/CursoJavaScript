@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro passos com DOM</title>
+    <style>
+      body {
+        background-color: rgb(63, 63, 66);
+        color: rgb(252, 252, 252); /* comentario em css*/
+        font-size: normal 10pt arial;
+      }
+      h1 {
+        color: rgb(24, 214, 21);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iniciando estudo com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em min</div>
+    <script>
+      var p1 = window.document.getElementsByTagName("p")[0];
+      var p2 = window.document.getElementById("msg");
+
+      p1.style.color = "red";
+      p2.style.background = "green";
+      //p2.innerText = "Estou aguardando....."; //SUbistitui o texto original
+      window.document.getElementById("msg").innerText = "Ola"; //Jeito grando mas normalde fazer
+      window.document.write("Esta escrito assim " + p1.innerHTML);
+      //window.alert("Esta escrito assim " + p1.innerText);
+      //window.alert("get id " + p2.innerText);
+    </script>
+  </body>
+</html>
