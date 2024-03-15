@@ -23,12 +23,16 @@
     <script>
       var p1 = window.document.getElementsByTagName("p")[0];
       var p2 = window.document.getElementById("msg");
+      var d = window.document.querySelector("div#msg");
+      d.style.color = "black";
 
       p1.style.color = "red";
       p2.style.background = "green";
+
       //p2.innerText = "Estou aguardando....."; //SUbistitui o texto original
-      window.document.getElementById("msg").innerText = "Ola"; //Jeito grando mas normalde fazer
-      window.document.write("Esta escrito assim " + p1.innerHTML);
+      //window.document.getElementById("msg").innerText = "Ola"; //Jeito grando mas normalde fazer
+
+      window.document.write("Esta escrito assim " + p1.innerText);
       //window.alert("Esta escrito assim " + p1.innerText);
       //window.alert("get id " + p2.innerText);
     </script>
