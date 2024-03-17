@@ -3,16 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modelo de exercicio</title>
+    <title>tabuada</title>
     <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
     <header>
-      <h1>Titulo</h1>
+      <h1>tabuada</h1>
     </header>
     <section>
-      <div>Testando...</div>
-      <div>Ola...</div>
+      <div>
+        <p>
+          Numero: <input type="number" name="txtnum" id="txtnum" min="0" />
+          <input type="button" value="Gerar Tabuada" onclick="tabuada()" />
+        </p>
+      </div>
+      <div>
+        <select name="tabuada" id="seltab" size="10">
+          <option>Digite um numero acima!</option>
+        </select>
+      </div>
     </section>
     <footer>&copy;2024 AFM. Todos os direitos reservados.</footer>
     <script src="script.js"></script>
